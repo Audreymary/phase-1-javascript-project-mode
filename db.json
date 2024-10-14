@@ -1,0 +1,76 @@
+{
+  "matches": [
+    {
+      "id": "1",
+      "teamA": "Team A",
+      "teamB": "Team B",
+      "date": "2024-10-20T15:00:00Z",
+      "oddsA": 2.5,
+      "oddsB": 3
+    },
+    {
+      "id": "2",
+      "teamA": "Team C",
+      "teamB": "Team D",
+      "date": "2024-10-21T17:00:00Z",
+      "oddsA": 1.8,
+      "oddsB": 4
+    },
+    {
+      "id": "3",
+      "teamA": "Team E",
+      "teamB": "Team F",
+      "date": "2024-10-22T19:00:00Z",
+      "oddsA": 2,
+      "oddsB": 3.5
+    },
+    {
+      "id": "4",
+      "teamA": "Team G",
+      "teamB": "Team H",
+      "date": "2024-10-23T14:00:00Z",
+      "oddsA": 3,
+      "oddsB": 2.5
+    },
+    {
+      "id": "5",
+      "teamA": "Team I",
+      "teamB": "Team J",
+      "date": "2024-10-24T16:00:00Z",
+      "oddsA": 1.5,
+      "oddsB": 4.5
+    }
+  ],
+  "bets": [
+    {
+      "id": "d0cd",
+      "matchId": 2,
+      "team": "team A",
+      "amount": "20"
+    },
+    {
+      "id": "fc60",
+      "matchId": 1,
+      "team": "team A",
+      "amount": "10"
+    },
+    {
+      "id": "c7a4",
+      "matchId": 2,
+      "team": "team c",
+      "amount": "50"
+    },
+    {
+      "id": "b906",
+      "matchId": 1,
+      "team": "Team A",
+      "amount": "20"
+    },
+    {
+      "id": "1c6c",
+      "matchId": 2,
+      "team": "team A",
+      "amount": "1.02"
+    }
+  ]
+}

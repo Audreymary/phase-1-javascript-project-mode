@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('ball.jpg'); /* Corrected syntax for background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: greenyellow;
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow; /* Fallback color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 128, 0, 0.7); /* Green tint for the container */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+img.logo {
+    width: 100%;
+    border-radius: 13px;
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+h1 {
+    text-align: center;
+    color: #FFD600;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    color: #FFC107;
+    border-bottom: 2px solid #FF9800;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.match {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FF9800;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.match:hover {
+    transform: scale(1.02);
+}
+
+button {
+    padding: 10px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #E64A19;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    color: #FFC107; /* Color for labels */
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #FFC107;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+input::placeholder, select {
+    color: #fff;
+}
+
+#bet-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bet-list li {
+    background: rgba(255, 193, 7, 0.7);
+    border: 1px solid #FFD600;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #BDBDBD;
+}
+
+/* New styles for the match button */
+.match button {
+    margin-top: 10px; /* Space above the bet button */
+    background-color: #4CAF50; /* Green button color */
+}
+
+.match button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Styling for additional info */
+.match p {
+    color: #FFF; /* White color for match details */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Styling for delete button */
+.delete-button {
+    background-color: #f44336; /* Red button color */
+}
+
+.delete-button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
