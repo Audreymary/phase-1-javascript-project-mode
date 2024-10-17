@@ -1,20 +1,20 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('ball.jpg'); /* Corrected syntax for background image */
+    background-image: url('ball.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: greenyellow;
     margin: 0;
     padding: 0;
-    background-color: greenyellow; /* Fallback color */
+    background-color: greenyellow; 
 }
 
 .container {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(0, 128, 0, 0.7); /* Green tint for the container */
+    background: rgba(0, 128, 0, 0.7); 
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
@@ -22,7 +22,7 @@ body {
 img.logo {
     width: 100%;
     border-radius: 13px;
-    margin-bottom: 20px; /* Space below the logo */
+    margin-bottom: 20px; 
 }
 
 h1 {
@@ -73,8 +73,8 @@ form {
 }
 
 label {
-    margin-bottom: 5px; /* Space between label and input */
-    color: #FFC107; /* Color for labels */
+    margin-bottom: 5px; 
+    color: #FFC107; 
 }
 
 input, select {
@@ -127,11 +127,12 @@ footer {
     margin: 5px 0; /* Space between paragraphs */
 }
 
-/* Styling for delete button */
+
 .delete-button {
-    background-color: #f44336; /* Red button color */
+    background-color: #f44336; 
 }
 
 .delete-button:hover {
-    background-color: #c62828; /* Darker red on hover */
+    background-color: #c62828; 
 }
+
