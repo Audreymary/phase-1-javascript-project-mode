@@ -47,6 +47,35 @@ function showBettingForm(matchId, teamA, teamB, oddsA, oddsB) {
     };
 }
 
+// Feedback submission function
+function submitFeedback() {
+    const feedback = feedbackTextarea.value.trim();
+    if (feedback) {
+        fetch(`http://localhost:3000/feedback`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ feedback }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Feedback submitted:', data);
+            feedbackTextarea.value = ''; // Clear the textarea
+            alert('Thank you for your feedback!'); // Provide user feedback
+        })
+        .catch(error => console.error('Error submitting feedback:', error));
+    } else {
+        alert('Please enter your feedback before submitting.');
+    }
+}
+
+// Attach event listener to feedback button
+feedbackButton.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default form submission
+    submitFeedback(); // Call the submit feedback function
+});
+
 // Place a bet (POST)
 function placeBet(matchId, team, amount) {
     const bet = { matchId, team, amount };
@@ -65,6 +94,7 @@ function placeBet(matchId, team, amount) {
     })
     .catch(error => console.error('Error placing bet:', error));
 }
+
 
 // Display the placed bet in the list
 function displayBet(bet) {
@@ -112,6 +142,20 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
+function fetchMatches() {
+    fetch('https://api.football-data.org/v2/matches', {
+        headers: {
+            'X-Auth-Token': 'YOUR_API_KEY'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        displayMatches(data.matches);
+    })
+    .catch(error => console.error('Error fetching matches:', error));
+}
+
+
 // // Feedback submission function
 function submitFeedback() {
     const feedback = feedbackTextarea.value.trim();
@@ -135,9 +179,12 @@ function submitFeedback() {
     }
 }
 // // Attach event listener to feedback button
-feedbackButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    submitFeedback();
+document.addEventListener('DOMContentLoaded', () => {
+    const feedbackButton = document.querySelector('#feedback-button');
+    feedbackButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        submitFeedback();
+    });
 });
 
 

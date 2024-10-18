@@ -1,19 +1,7 @@
 {
   "matches": [
     {
-      "id": 1,
-      "teamA": "Team A",
-      "teamB": "Team B",
-      "date": "2024-10-20",
-      "time": "15:00 GMT",
-      "odds": {
-        "teamA": 1.5,
-        "teamB": 2.5
-      },
-      "description": "Team A has been performing well in recent matches, making them a strong contender against Team B."
-    },
-    {
-      "id": 2,
+      "id": "2",
       "teamA": "Team C",
       "teamB": "Team D",
       "date": "2024-10-21",
@@ -25,7 +13,7 @@
       "description": "Both teams have had a mixed season, making this match unpredictable and exciting."
     },
     {
-      "id": 3,
+      "id": "3",
       "teamA": "Team E",
       "teamB": "Team F",
       "date": "2024-10-22",
@@ -35,38 +23,26 @@
         "teamB": 2.2
       },
       "description": "Team E is looking to maintain their winning streak against a tough opponent."
-    },
-    {
-      "id": 4,
-      "teamA": "Team G",
-      "teamB": "Team H",
-      "date": "2024-10-23",
-      "time": "20:00 GMT",
-      "odds": {
-        "teamA": 1.9,
-        "teamB": 2.1
-      },
-      "description": "This match is expected to be closely contested, with both teams showing strong form."
     }
   ],
   "bets": [
     {
-      "id": "65dd",
+      "id": "1563",
       "matchId": 2,
       "team": "teamA",
-      "amount": "700"
+      "amount": "400"
     },
     {
-      "id": "10c9",
-      "matchId": 3,
+      "id": "2d85",
+      "matchId": 1,
+      "team": "teamA",
+      "amount": "777"
+    },
+    {
+      "id": "84e0",
+      "matchId": 1,
       "team": "teamA",
       "amount": "600"
-    },
-    {
-      "id": "48b3",
-      "matchId": 4,
-      "team": "teamA",
-      "amount": "90"
     }
   ],
   "feedback": [
@@ -77,6 +53,38 @@
     {
       "id": "b78b",
       "feedback": "hhh"
+    },
+    {
+      "id": "8132",
+      "feedback": "j"
+    },
+    {
+      "id": "62c7",
+      "feedback": "nice game"
+    },
+    {
+      "id": "9d7f",
+      "feedback": "jin"
+    },
+    {
+      "id": "65dc",
+      "feedback": "nice game"
+    },
+    {
+      "id": "e9a7",
+      "feedback": "hin"
+    },
+    {
+      "id": "14cb",
+      "feedback": "Nice game"
+    },
+    {
+      "id": "eb56",
+      "feedback": "jin"
+    },
+    {
+      "id": "5b4b",
+      "feedback": "you"
     }
   ]
 }
